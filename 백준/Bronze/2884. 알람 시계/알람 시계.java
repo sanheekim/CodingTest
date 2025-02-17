@@ -2,23 +2,22 @@ import java.util.*;
 
 public class Main{
     public static void main(String[] args){
+        
         Scanner sc = new Scanner(System.in);
-        
-        int hour = sc.nextInt();
-        int min = sc.nextInt();
+        int h = sc.nextInt();
+        int m = sc.nextInt();
         sc.close();
-
-        if (min < 45){
-            hour = hour-1;
-            min = 60-(45-min);
-            if (hour < 0) { hour = 23; }
-            System.out.println(hour+" "+min);
-        } else {
-            System.out.println(hour+" "+(min-45));
-        }
         
+        if (m < 45){
+            h--;
+            m=60+(m-45);
+            if (h<0){
+                h=23;
+            }
+            System.out.println(h+" "+m);
+        } else {
+            System.out.println(h+" "+(m-45));
+        }
+
     }
 }
-
-// 10 10 -> 9 15
-// 23 45 -> 23 00
