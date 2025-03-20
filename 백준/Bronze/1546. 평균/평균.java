@@ -3,21 +3,24 @@ import java.util.*;
 public class Main {
     public static void main(String[] args){
         Scanner sc = new Scanner(System.in);
-        int N = sc.nextInt();
-        double[] arr = new double[N];
+        int subject = sc.nextInt();
+        double[] arr = new double[subject];
         double max = 0;
-        double avg = 0; 
+        double average = 0;
         
-        for(int i=0;i<arr.length;i++){
+        for (int i=0;i<arr.length;i++){
             double score = sc.nextInt();
             arr[i] = score;
-            if(arr[i]>max){
+            if (arr[i]>max){
                 max = arr[i];
             }
         }
-        for(int j=0;j<arr.length;j++){
-            avg += (arr[j]/max*100)/N;
+        for (int j=0;j<arr.length;j++){
+            average += (arr[j]/max*100)/subject;
         }
-        System.out.println(avg);
+        System.out.println(average);
     }
 }
+
+
+//점수/M*100
