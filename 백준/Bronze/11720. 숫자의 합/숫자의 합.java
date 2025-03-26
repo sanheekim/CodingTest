@@ -6,6 +6,7 @@ public class Main {
         int max = sc.nextInt();
         String s = sc.next();
         int total = 0;
+        
         for(int i=0;i<max;i++){
             total += s.charAt(i)-'0';
         }
