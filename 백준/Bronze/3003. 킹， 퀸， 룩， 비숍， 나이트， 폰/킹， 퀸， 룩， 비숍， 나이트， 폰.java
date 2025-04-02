@@ -4,7 +4,7 @@ import java.io.*;
 public class Main {
     public static void main(String[] args) throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-        StringTokenizer st = new StringTokenizer(br.readLine(), " ");
+        StringTokenizer st = new StringTokenizer(br.readLine()," ");
         int king = 1;
         int queen = 1;
         int look = 2;
@@ -18,10 +18,14 @@ public class Main {
         bs = bs-Integer.parseInt(st.nextToken());
         knight = knight-Integer.parseInt(st.nextToken());
         pawn = pawn-Integer.parseInt(st.nextToken());
-        
-        System.out.print(king+" "+queen+" "+look+" "+bs+" "+knight+" "+pawn+" ");
+       
+        System.out.print(king+" ");
+        System.out.print(queen+" ");
+        System.out.print(look+" ");
+        System.out.print(bs+" ");
+        System.out.print(knight+" ");
+        System.out.print(pawn+" ");
     }
 }
-/*
-킹 1개, 퀸 1개, 룩 2개, 비숍 2개, 나이트 2개, 폰 8개
-*/
+
+/*킹 1개, 퀸 1개, 룩 2개, 비숍 2개, 나이트 2개, 폰 8개*/
